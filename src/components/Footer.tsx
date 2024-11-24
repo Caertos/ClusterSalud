@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img className="h-auto w-40 object-contain" src="/logo.png" alt="Cluster de Salud" />
+            <img className="h-auto w-40 object-contain" src="/ClusterSalud/logo.png" alt="Cluster de Salud" />
             <p className="text-gray-400">
               Impulsando la innovación en salud a través de la colaboración y la excelencia.
             </p>

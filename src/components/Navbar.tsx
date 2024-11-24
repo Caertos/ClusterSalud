@@ -13,7 +13,7 @@ const Navbar = () => {
             <Link to="/">
               <img
                 className="h-auto w-40 object-contain"
-                src="/logo.png"
+                src="/ClusterSalud/logo.png"
                 alt="Cluster de Salud"
               />
             </Link>
