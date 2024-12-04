@@ -42,20 +42,20 @@ const Home = () => {
               {
                 title: "¿Qué sí es?",
                 description: `
-          • Grupo interdisciplinar de partes interesadas en profundizar la aplicación del enfoque de SbN enfocado en investigación, generación de conocimiento aplicado e innovación.<br />
-          • Trabaja un enfoque específico entorno a adaptación, mitigación del cambio climático y conservación de la biodiversidad.<br />
-          • Su vinculación es de carácter libre y voluntaria. Tiene su propia estructura de gobernanza.<br />
-          • Conformado por universo de actores diversos (academia, Sociedad civil, gremios, instituciones públicas y privadas).<br />
-          • Forma parte de la MICC
+          ✔ Grupo interdisciplinar de partes interesadas en profundizar la aplicación del enfoque de SbN enfocado en investigación, generación de conocimiento aplicado e innovación.<br />
+          ✔ Trabaja un enfoque específico entorno a adaptación, mitigación del cambio climático y conservación de la biodiversidad.<br />
+          ✔ Su vinculación es de carácter libre y voluntaria. Tiene su propia estructura de gobernanza.<br />
+          ✔ Conformado por universo de actores diversos (academia, Sociedad civil, gremios, instituciones públicas y privadas).<br />
+          ✔ Forma parte de la MICC
         `,
                 icon: "icons/g-icon.svg",
               },
               {
                 title: "¿Qué no es?",
                 description: `
-          • Un espacio de toma de decisiones para la escala regional.<br />
-          • Una instancia de carácter normativo - reglamentada en el departamento.<br />
-          • Un espacio que trabaje diversos temas en el departamento por ejemplo temas sociales.
+          ✔ Un espacio de toma de decisiones para la escala regional.<br />
+          ✔ Una instancia de carácter normativo - reglamentada en el departamento.<br />
+          ✔ Un espacio que trabaje diversos temas en el departamento por ejemplo temas sociales.
         `,
                 icon: "icons/g-icon.svg",
               },
