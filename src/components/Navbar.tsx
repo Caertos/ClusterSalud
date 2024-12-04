@@ -25,7 +25,8 @@ const Navbar = () => {
             <Link to="/services" className="text-gray-700 hover:text-primary transition">Servicios</Link>
             <Link to="/projects" className="text-gray-700 hover:text-primary transition">Proyectos</Link>
             <Link to="/news" className="text-gray-700 hover:text-primary transition">Noticias</Link>
-            <Link to="/contact" className="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition">Contacto</Link>
+            <Link to="/contact" className="text-gray-700 hover:text-primary transition">Contacto</Link>
+            <Link to="https://dev-cluster-salud.gatewayit.co/dashboard/perfil/empresas" className="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition">Acceder</Link>
           </div>
 
           <div className="md:hidden flex items-center">
