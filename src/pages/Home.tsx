@@ -36,7 +36,7 @@ const Home = () => {
       {/*¿Qué Somos?*/}
       <section className="py-20">
         <h2 className="text-3xl font-bold text-center mb-12">Cluster</h2>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 justify-center">
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
             {[
               {
@@ -48,6 +48,7 @@ const Home = () => {
           • Conformado por universo de actores diversos (academia, Sociedad civil, gremios, instituciones públicas y privadas).<br />
           • Forma parte de la MICC
         `,
+                icon: "icons/g-icon.svg",
               },
               {
                 title: "¿Qué no es?",
@@ -56,28 +57,29 @@ const Home = () => {
           • Una instancia de carácter normativo - reglamentada en el departamento.<br />
           • Un espacio que trabaje diversos temas en el departamento por ejemplo temas sociales.
         `,
+                icon: "icons/g-icon.svg",
               },
             ].map((service, index) => (
               <div
                 key={index}
-                className="relative bg-white p-8 rounded-lg shadow-lg flex flex-col items-center text-center overflow-hidden"
+                className="relative bg-white p-8 rounded-lg shadow-lg flex flex-col items-center overflow-hidden max-w-96"
               >
                 {/* Fondo con gradiente diagonal */}
-                <div className="absolute w-52 h-52 bg-gradient-to-br from-[#87BB33] to-[#00697B] -top-0 -left-0 clip-triangle pointer-events-none"></div>
+                <div className="absolute w-full h-52 bg-gradient-to-br from-[#87BB33] to-[#00697B] -top-0 -right-0 clip-triangle pointer-events-none"></div>
 
                 {/* Círculo decorativo */}
-                <div className="relative w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center mb-6">
-                  {/* Aquí podrías colocar un ícono SVG en el futuro */}
+                <div className="relative w-36 h-36 bg-white rounded-full shadow-md flex items-center justify-center mb-6">
+                  <img src={service.icon} alt="Ícono" className="w-16 h-16" />
                 </div>
 
                 {/* Título */}
-                <h3 className="relative text-xl font-semibold text-gray-800 mb-4 z-10">
+                <h3 className="relative text-xl font-semibold text-gray-800 mb-4 z-10 text-center">
                   {service.title}
                 </h3>
 
                 {/* Descripción */}
                 <p
-                  className="relative text-gray-600 text-sm z-10"
+                  className="relative text-gray-600 text-sm z-10 text-justify"
                   dangerouslySetInnerHTML={{ __html: service.description }}
                 />
               </div>
