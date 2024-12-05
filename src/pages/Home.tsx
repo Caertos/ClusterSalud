@@ -17,7 +17,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="/services"
+                href="./services"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50"
               >
                 Nuestros Servicios <ArrowRight className="ml-2" size={20} />
