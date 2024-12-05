@@ -1,6 +1,12 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
+const socialLinks: Record<string, string> = {
+  Facebook: "https://www.facebook.com/ccmonteria/",
+  Twitter: "https://x.com/ccmonteria/",
+  Youtube: "https://www.youtube.com/channel/UC7xtfB8M3em-jTLLNl8zjyA",
+};
+
 const Contact = () => {
   return (
     <div>
@@ -81,14 +87,15 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-primary mt-1" />
                   <div className="ml-4">
                     <h3 className="font-semibold">Dirección</h3>
-                    <p className="text-gray-600">Avenida Salud 123<br />Córdoba, Colombia</p>
+                    <a className="text-gray-600" href='https://www.google.com/maps/place/Cámara+De+Comercio+de+Montería/@8.7552831,-75.8878581,775m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e5a2fe59d5f0a7b:0xfe3793ee6586c9e5!8m2!3d8.7552778!4d-75.8852778!16s%2Fg%2F1tg82j1h?entry=ttu&g_ep=EgoyMDI0MTIwMy4wIKXMDSoASAFQAw%3D%3D'>Calle 28 No. 4 - 61<br />Córdoba, Colombia</a>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Phone className="w-6 h-6 text-primary mt-1" />
                   <div className="ml-4">
                     <h3 className="font-semibold">Teléfono</h3>
-                    <p className="text-gray-600">+54 (351) 123-4567</p>
+                    <a className="text-gray-600" href="tel:+573152817473">+57 3152817473
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -102,7 +109,7 @@ const Contact = () => {
                   <Clock className="w-6 h-6 text-primary mt-1" />
                   <div className="ml-4">
                     <h3 className="font-semibold">Horario</h3>
-                    <p className="text-gray-600">Lunes - Viernes: 9:00 AM - 6:00 PM<br />Sábados: 9:00 AM - 1:00 PM</p>
+                    <p className="text-gray-600">Lunes a viernes | 8:00 am a 12:00 pm - 2:00 pm a 6:00 pm</p>
                   </div>
                 </div>
               </div>
@@ -111,11 +118,13 @@ const Contact = () => {
               <div className="mt-8">
                 <h3 className="font-semibold mb-4">Síguenos</h3>
                 <div className="flex space-x-4">
-                  {['Facebook', 'Twitter', 'LinkedIn', 'Instagram'].map((social) => (
+                  {['Facebook', 'Twitter', 'Youtube'].map((social) => (
                     <a
                       key={social}
-                      href="#"
+                      href={socialLinks[social]}
                       className="bg-gray-100 hover:bg-primary hover:text-white px-4 py-2 rounded-md transition"
+                      target='_blank'
+                      rel='noopener noreferrer'
                     >
                       {social}
                     </a>

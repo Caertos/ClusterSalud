@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Facebook, Twitter, Youtube} from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -27,26 +27,25 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Córdoba, Colombia</li>
-              <li>Teléfono: +54 (351) 123-4567</li>
-              <li>Email: info@clustersalud.com</li>
+              <li><a href="https://ccmonteria.org.co">Cámara de Comercio de Montería</a></li>
+              <li>NIT: 891080019</li>
+              <li><a href="https://www.google.com/maps/place/Cámara+De+Comercio+de+Montería/@8.7552831,-75.8878581,775m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e5a2fe59d5f0a7b:0xfe3793ee6586c9e5!8m2!3d8.7552778!4d-75.8852778!16s%2Fg%2F1tg82j1h?entry=ttu&g_ep=EgoyMDI0MTIwMy4wIKXMDSoASAFQAw%3D%3D">Calle 28 No. 4 - 61 (Córdoba) Colombia</a></li>
+              <li><a href="tel:+573152817473">Teléfono: +573152817473</a></li>
+              <li><a href="https://api.whatsapp.com/send/?phone=<+573173709299>">Whatsapp: +573173709299</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Síguenos</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="https://www.facebook.com/ccmonteria/" className="text-gray-400 hover:text-white">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="https://x.com/ccmonteria/" className="text-gray-400 hover:text-white">
                 <Twitter size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Linkedin size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Mail size={24} />
+              <a href="https://www.youtube.com/channel/UC7xtfB8M3em-jTLLNl8zjyA" className="text-gray-400 hover:text-white">
+                <Youtube size={24} />
               </a>
             </div>
           </div>
