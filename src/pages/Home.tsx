@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight, Activity, Heart, Microscope, Users } from "lucide-react";
 
 const Home = () => {
@@ -16,12 +17,12 @@ const Home = () => {
               instituciones para avanzar en la innovación médica en Córdoba
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href="./Services"
+              <Link
+                to="/services"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50"
               >
                 Nuestros Servicios <ArrowRight className="ml-2" size={20} />
-              </a>
+              </Link>
               <a
                 href="https://dev-cluster-salud.gatewayit.co/dashboard/perfil/empresas"
                 className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white/10"
