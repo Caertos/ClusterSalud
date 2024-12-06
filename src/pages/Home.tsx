@@ -70,7 +70,7 @@ const Home = () => {
                 {/* Círculo decorativo */}
                 <div className="relative w-36 h-36 bg-white rounded-full shadow-md flex items-center justify-center mb-6">
                   <img
-                    src="/icons/g-icon.svg"
+                    src="icons/g-icon.svg"
                     alt="Ícono"
                     className="w-16 h-16"
                   />
