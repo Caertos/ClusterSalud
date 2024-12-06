@@ -58,7 +58,6 @@ const Home = () => {
           ✔ Una instancia de carácter normativo - reglamentada en el departamento.<br />
           ✔ Un espacio que trabaje diversos temas en el departamento por ejemplo temas sociales.
         `,
-                icon: "icons/g-icon.svg",
               },
             ].map((service, index) => (
               <div
@@ -70,7 +69,11 @@ const Home = () => {
 
                 {/* Círculo decorativo */}
                 <div className="relative w-36 h-36 bg-white rounded-full shadow-md flex items-center justify-center mb-6">
-                  <img src={service.icon} alt="Ícono" className="w-16 h-16" />
+                  <img
+                    src="/icons/g-icon.svg"
+                    alt="Ícono"
+                    className="w-16 h-16"
+                  />
                 </div>
 
                 {/* Título */}
