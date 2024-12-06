@@ -58,7 +58,7 @@ const Home = () => {
           ✔ Una instancia de carácter normativo - reglamentada en el departamento.<br />
           ✔ Un espacio que trabaje diversos temas en el departamento por ejemplo temas sociales.
         `,
-                icon: "icons/g-icon.svg",
+                icon: "/icons/g-icon.svg",
               },
             ].map((service, index) => (
               <div
